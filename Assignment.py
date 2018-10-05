@@ -26,7 +26,7 @@ for res in tweepy.Cursor(api.search, q = SEARCH, rpp=100, count=100, result_type
 	f.write(' ')
 	f.write('[')
 	f.write(res.created_at.strftime("%d/%b/%Y:%H:%M:%S %Z"))
-	f.write(']')	
+	f.write(']')                   
 	f.write(" ")
 	f.write('"')
 	f.write(res.text.replace('\n',''))
